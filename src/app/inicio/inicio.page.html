@@ -9,11 +9,11 @@
       <ion-input type="password" placeholder="Senha"></ion-input>
   </ion-card>
 </div>
-<ion-button (click)="onClick()" size="block" class="entrar">
+<ion-button (click)="onClick()" size="block" class="entrar" routerLink="/tabs/tab1" routerLinkActive="active-route">
   entrar
 </ion-button>
 
-<ion-button (click)="onClick()" size="block" class="cadastrar">
+<ion-button (click)="onClick()" size="block" class="cadastrar" routerLink="/cadastro" routerLinkActive="active-route">
   cadastro
 </ion-button>
 </ion-content>
