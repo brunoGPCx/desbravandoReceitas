@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>suporte</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -23,6 +23,10 @@
     <ion-label class="bg" position="start">Descreva seu problema</ion-label>
     <ion-textarea  class="tamanho"></ion-textarea>
   </ion-item>
+
+  <ion-button (click)="onClick()" size="block" class="cadastrar" routerLink="/tabs" routerLinkActive="active-route">
+    Enviar ticket
+  </ion-button>
 
 <ion-row>
   <ion-col class="format">
