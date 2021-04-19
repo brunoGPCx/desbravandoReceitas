@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-title class="ion-text-center">
+        Nova receita
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-row>
+  <ion-col>
+    <ion-item>
+      <ion-label color="medium">Nome da receita:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+
+  <ion-button size="block" (click)="onClick()">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
+
+
+<!-- <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Receita</ion-card-subtitle>
+    <ion-card-title><ion-input type="text" placeholder="Awesome Input"></ion-input></ion-card-title>
+  </ion-card-header>
+
+</ion-card> -->
+
+<ion-item>
+  <ion-label position="floating">Description</ion-label>
+  <ion-textarea></ion-textarea>
+</ion-item>
+  
+<ion-button (click)="onClick()" fill="clear">
+    <ion-text color="primary">
+      <h1  class="size">Termos de uso</h1>
+    </ion-text>
+    
+    
+  </ion-button>
+ 
+  
+<ion-button size="block" (click)="onClick()">
+  <ion-icon slot="icon-only" name="checkmark-done"></ion-icon>
+</ion-button>
+</ion-content>

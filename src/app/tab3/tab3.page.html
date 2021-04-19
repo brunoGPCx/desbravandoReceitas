@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+<ion-avatar class="img">
+  <img src="https://i.pravatar.cc/150?img=12" />
+</ion-avatar>
+
+<ion-card>
+  <ion-card-header>
+    <ion-button (click)="onClick()" size="small">
+      <ion-icon  name="options"></ion-icon>
+    </ion-button>
+    <ion-card-subtitle>Nome</ion-card-subtitle>
+    <ion-card-title>Bruno Garcia</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-button (click)="onClick()" size="small">
+      <ion-icon  name="options"></ion-icon>
+    </ion-button>
+    <ion-card-subtitle>Idade</ion-card-subtitle>
+    <ion-card-title>22</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-button (click)="onClick()" size="small">
+      <ion-icon  name="options"></ion-icon>
+    </ion-button>
+    <ion-card-subtitle>País</ion-card-subtitle>
+    <ion-card-title>Brasil</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-button (click)="onClick()" size="small">
+      <ion-icon  name="options"></ion-icon>
+    </ion-button>
+    <ion-card-subtitle>Hobbie</ion-card-subtitle>
+    <ion-card-title>Viajar e conher pratos tipicos de outras culturas</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Avaliacoes</ion-card-subtitle>
+    <ion-card-subtitle>375 avaliacoes</ion-card-subtitle>
+    
+    <ion-badge  color="primary" class="star">
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star-half"></ion-icon>
+    </ion-badge>
+  </ion-card-header>
+
+  
+<!-- </ion-card>
+<ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerlink="/tabs/tab3/suporte">
+  Suporte
+</ion-button> 
+(nao funcionou e nao consegui descobrir o motivo)
+-->
+<a href="/tabs/tab3/suporte"> suporte</a>
+
+</ion-content>
