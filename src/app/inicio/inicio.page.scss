@@ -1,19 +1,35 @@
 
-ion-content {
-    --background:  url('../../assets/img/Vegetables.jpg') no-repeat center center / cover !important;
-}
+    .background-image {
+        --background:  url('../../assets/img/Vegetables.jpg') no-repeat center center / cover !important;
+        filter: blur(3px);
+       position: absolute;
+    }
 
+    #logo{
+        position: fixed;
+    }
+    #teste{
+        margin-top: 75%;    
+        
+    }
+
+    .login{
+        
+    }
 
 .entrar{
     width: 180px;
     margin-left: 115px;
     margin-top: 30px;
+    filter: none !important;
+    
 }
 
 .cadastrar{
         width: 180px;
         margin-left: 115px;
         margin-top: 10px;
+        
     
 }
 

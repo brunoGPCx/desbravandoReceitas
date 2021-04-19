@@ -1,20 +1,25 @@
 
 
-<ion-content class="background-image" >
+
+
+
+<ion-content class="login">
+  <ion-content class="background-image" >
+  </ion-content>
+  <ion-img src="assets/img/logo.png" id="logo"></ion-img>
+  <div id="teste"> 
+  <div style="height: 10%; display: flex; align-items: center; justify-content: center;;">
+    <ion-card>
+        <ion-input placeholder="Login"></ion-input>
+        <ion-input type="password" placeholder="Senha"></ion-input>
+    </ion-card>
+  </div>
+  <ion-button (click)="onClick()" size="block" class="entrar" routerLink="/tabs/tab1" routerLinkActive="active-route">
+    entrar
+  </ion-button>
   
-<ion-img src="assets/img/logo.png"></ion-img>
-
-<div style="height: 10%; display: flex; align-items: center; justify-content: center;">
-  <ion-card>
-      <ion-input placeholder="Login"></ion-input>
-      <ion-input type="password" placeholder="Senha"></ion-input>
-  </ion-card>
+  <ion-button (click)="onClick()" size="block" class="cadastrar" routerLink="/cadastro" routerLinkActive="active-route">
+    cadastro
+  </ion-button>
 </div>
-<ion-button (click)="onClick()" size="block" class="entrar" routerLink="/tabs/tab1" routerLinkActive="active-route">
-  entrar
-</ion-button>
-
-<ion-button (click)="onClick()" size="block" class="cadastrar" routerLink="/cadastro" routerLinkActive="active-route">
-  cadastro
-</ion-button>
 </ion-content>
