@@ -7,45 +7,47 @@
 </ion-header>
 
 <ion-content>
+  
+      <ion-item>
+        <ion-label color="medium"> <ion-icon slot="start" name="book"></ion-icon> Nome da receita:</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+   
+  <ion-item >
+    <ion-label class="bg" position="start" color="medium"><ion-icon slot="start" name="receipt"></ion-icon> Ingredientes:</ion-label>
+    <ion-textarea ></ion-textarea>
+  </ion-item>
 
-<ion-row>
-  <ion-col>
-    <ion-item>
-      <ion-label color="medium">Nome da receita:</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-  </ion-col>
-</ion-row>
+  <ion-item >
+    <ion-label class="bg" position="start" color="medium"><ion-icon slot="start" name="hourglass"></ion-icon> Modo de preparo:</ion-label>
+    <ion-textarea ></ion-textarea>
+  </ion-item>
+  
+<ion-card-subtitle  class="ion-text-center" class="enviar">Enviar foto</ion-card-subtitle>
 
-
-  <ion-button size="block" (click)="onClick()">
-    <ion-icon slot="icon-only" name="add"></ion-icon>
+  <ion-button expand="block">
+    <ion-icon lazy="true"></ion-icon>
+    <ion-label></ion-label>
+    <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+    accept="image/png, image/jpeg">
+  </ion-button>
+   
+  <ion-card-subtitle  class="ion-text-center" class="postar">Postar</ion-card-subtitle>
+  
+  <ion-button size="block" (click)="onClick()" routerLink="/tabs/tab1" routerLinkActive="active-route">
+    <ion-icon slot="icon-only" name="checkmark-done"></ion-icon>
   </ion-button>
 
+  <ion-button size="block"  color="danger" routerLink="/tabs/tab1" routerLinkActive="active-route" >
+    <ion-icon slot="icon-only" name="trash"></ion-icon>
+    
+  </ion-button>
 
-<!-- <ion-card>
-  <ion-card-header>
-    <ion-card-subtitle>Receita</ion-card-subtitle>
-    <ion-card-title><ion-input type="text" placeholder="Awesome Input"></ion-input></ion-card-title>
-  </ion-card-header>
-
-</ion-card> -->
-
-<ion-item>
-  <ion-label position="floating">Description</ion-label>
-  <ion-textarea></ion-textarea>
-</ion-item>
   
-<ion-button (click)="onClick()" fill="clear">
+  
+  <ion-button (click)="onClick()" fill="clear" routerLink="/termos" routerLinkActive="active-route">
     <ion-text color="primary">
       <h1  class="size">Termos de uso</h1>
     </ion-text>
-    
-    
   </ion-button>
- 
-  
-<ion-button size="block" (click)="onClick()">
-  <ion-icon slot="icon-only" name="checkmark-done"></ion-icon>
-</ion-button>
 </ion-content>
