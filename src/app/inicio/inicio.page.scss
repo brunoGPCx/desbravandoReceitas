@@ -1,12 +1,13 @@
 
     .background-image {
-        --background:  url('../../assets/img/Vegetables.jpg') no-repeat center center / cover !important;
-        filter: blur(3px);
+        --background:  url('../../assets/img/amora.jpg') no-repeat center center / cover !important;
+        filter: blur(2px);
        position: absolute;
     }
 
     #logo{
         position: fixed;
+        
     }
     #teste{
         margin-top: 75%;    
