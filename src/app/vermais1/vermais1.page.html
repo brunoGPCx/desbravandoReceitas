@@ -1,9 +1,77 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>vermais1</ion-title>
+  <ion-toolbar class="ion-text-center">
+    Perfil
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
+  <ion-back-button color="dark" class="save-button" defaultHref="/tabs" routerLink="/tabs" routerLinkActive="active-route">
+  </ion-back-button>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-avatar>
+            <img src="https://i.pravatar.cc/150?img=60" />
+          </ion-avatar>
+        </ion-col>
+        <ion-col >
+          <ion-badge  color="primary" >
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </ion-badge>
+          <ion-card-title>Sebastião Hermínia</ion-card-title>
+          <ion-card-subtitle>Turquia</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card-content>
+      <ion-text>
+        <h1 class="size">Torta de frango</h1><br>
+      </ion-text>
+      Recheio:<br>
+      500 g de peito de frango sem pele<br>
+      1/2 litro de caldo de galinha<br>
+      4 colheres (sopa) de óleo<br>
+      1 dente de alho amassado<br>
+      1 cebola picada<br>
+      3 tomates sem pele e sem sementes<br>
+      1 xícara (chá) de ervilhas<br>
+      sal e pimenta-do-reino a gosto<br><br>
+      
+      Massa:<br>
+      250 ml de leite<br>
+      3/4 de xícara (chá) de óleo<br>
+      2 ovos<br>
+      1 e 1/2 xícara (chá) de farinha de trigo<br>
+      sal a gosto<br>
+      1 colher (sopa) de fermento em pó<br>
+      queijo ralado a gosto<br><br>
+
+      Recheio:<br>
+      Cozinhe o peito de frango no caldo até ficar macio.<br>
+      Separe 1 xícara (chá) de caldo do cozimento e reserve.<br>
+      Refogue os demais ingredientes e acrescente as ervilhas por último.<br>
+      Desfie o frango, misture ao caldo e deixe cozinhar até secar.<br><br>
+
+      Massa:<br>
+      Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.<br>
+      Acrescente aos poucos a farinha, o sal e o fermento.<br>
+      Despeje metade da massa em uma forma untada e adicione o recheio sobre ela.<br>
+      Cubra com o restante de massa e o queijo ralado.<br>
+      Leve ao forno preaquecido (180° C) até dourar.<br><br>
+    
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/tabs" routerLinkActive="active-route">
+        Ver menos
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

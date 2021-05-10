@@ -1,9 +1,73 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>vermais2</ion-title>
+  <ion-toolbar class="ion-text-center">
+    Perfil
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
+  <ion-back-button color="dark" class="save-button" defaultHref="/tabs" routerLink="/tabs" routerLinkActive="active-route">
+  </ion-back-button>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-avatar>
+            <img src="https://i.pravatar.cc/150?img=59"/>
+          </ion-avatar>
+        </ion-col>
+        <ion-col >
+          <ion-badge  color="primary" >
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </ion-badge>
+          <ion-card-title>Junior Freitas</ion-card-title>
+            <ion-card-subtitle>Brasil</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card-content>
+      <ion-text>
+        <h1 class="size">Coxinha vegana</h1><br>
+      </ion-text>
+      Recheio:<br>
+      3 dentes de alho picados<br>
+      1/2 xícara (de chá) de cebola picada<br>
+      2 xícaras (de chá) de palmito bem picado (cerca de 300g)<br>
+      1/3 de xícara (de chá) de azeitonas picadas<br>
+      1 colher (de sopa) de extrato de tomate<br>
+      1 colher (de sopa) de amido de milho misturada em 2 colheres (de sopa) de água<br>
+      1/2 xícara (de chá) de salsinha e cebolinha picadas<br>
+      1 colher (de chá) de orégano<br>
+      Sal a gosto<br>
+      Pimenta do reino moída a gosto<br><br>
+      Massa:<br>
+      2 xícaras (de chá) de caldo de legumes<br> 
+      4 colheres (de sopa) de azeite<br>
+      1/2 colher (de chá) de sal<br>
+      2 xícaras (de chá) de farinha de trigo<br>
+      1 xícara (de chá) de panko ou farinha de rosca<br><br>
+      Modo de preparo:<br>
+      Antes de tudo, prepare o recheio. Em uma panela em fogo médio, coloque um fio de óleo e refogue o alho e a cebola até ficarem levemente dourados. Acrescente o palmito picado, as azeitonas picadas, tempere com uma pitada de sal e misture.
+      Adicione o extrato de tomate, misture e acrescente o amido de milho misturado com a água e mexa novamente. Adicione a salsinha e a cebolinha, o orégano desidratado, e se gostar tempere com pimenta do reino moída. Desligue e reserve.
+      Para a massa: Em uma panela grande em fogo médio, coloque o caldo de legumes, o azeite, o sal e deixe ferver. Quando começar a ferver abaixe o fogo e adicione a farinha de trigo de uma só vez e misture bem. Vai parecer que deu errado, mas é assim mesmo. Misture até virar uma bola de massa firme e pesada, o que vai levar cerca de 3 minutos. Desligue e deixe esfriar por cerca de meia hora.
+      Coloque esta massa ainda morna, mas que dê para trabalhar com as mãos, sobre um balcão limpo e sove por 5 minutos, até ficar lisa e uniforme.
+      Divida ela em 8 bolinhas do mesmo tamanho.
+      Pegue uma bolinha, amasse rapidamente e modele uma espécie de cestinha, com as paredes altas.
+      Coloque 1 colher de sopa cheia de recheio e feche bem, puxando delicadamente as laterais. Use as palmas das mãos para modelar as coxinhas. Repita o processo com o restante da massa.
+      Coloque água em um pote largo e fundo e cerca de 1 xícara de panko em um prato raso. Passe as coxinhas na água e em seguida na panko, para empanar.
+      Frite em óleo limpo e bem quente até ficarem douradinhas e coloque sobre papel toalha para absorver o excesso de óleo.<br><br>
+    
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/tabs" routerLinkActive="active-route">
+        Ver menos
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
