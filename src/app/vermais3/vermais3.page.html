@@ -1,9 +1,78 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>vermais3</ion-title>
+  <ion-toolbar class="ion-text-center">
+    Perfil
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
+  <ion-back-button color="dark" class="save-button" defaultHref="/tabs" routerLink="/tabs" routerLinkActive="active-route">
+  </ion-back-button>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-avatar>
+            <img src="https://i.pravatar.cc/150?img=58"/>
+          </ion-avatar>
+        </ion-col>
+        <ion-col >
+          <ion-badge  color="primary" >
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </ion-badge>
+          <ion-card-title>Pedro Hernanes</ion-card-title>
+            <ion-card-subtitle>Argentina</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card-content>
+      <ion-text>
+        <h1 class="size" >Paella</h1><br>
+      </ion-text>
+      Recheio:<br>
+      -3 xícaras de arroz (agulhinha ou arbório) sem lavar<br>
+      -300 g filés de camarões médios<br>
+      -200 g de camarões grandes inteiros (ou lagostins)<br>
+      -250 g de lulas em aneis<br>
+      -250 g de polvo<br>
+      -200 g de mexilhões (ou vôngoles ou vieiras)<br>
+      -300 g de peito de frango em cubos ou 8 coxinhas da asa (ou peixe, ou coelho, ou pato)<br>
+      -2 cebolas grandes<br>
+      -2 tomates<br>
+      -1 talo de alho-poró<br>
+      -1 pimentão vermelho para decoração<br>
+      -8 dentes de alho<br>
+      -1 caldo de camarão (ou peixe)<br>
+      -1 envelope de tempero para paella<br>
+      -1/2 colher (chá) de açafrão (indispensável)<br>
+      -200 g de ervilhas frescas ou congeladas (1 xícara)<br>
+      -Salsinha, azeite e pimenta fresca a gosto<br><br>
+      Modo de preparo:<br>
+      Tempere as coxinhas da asa (ou filé de peito de frango ou de peixe, coelho, pato ou porco) e vá refogando em azeite, vire continuamente. Se preferir, pode ir pingando água para garantir que não ficará cru. Reserve.
+      Coloque as lulas e o polvo para cozinhar na panela de pressão com meia cebola, um tomate, uma folha de louro, salsinha/salsão e um dente de alho.
+      Não coloque água. Assim que pegar pressão, aguarde 5 minutos e desligue o fogo, mas não retire a pressão, deixando que ela se esvaia naturalmente. Reserve a água que solta dos ingredientes para o caldo do cozimento do arroz.
+      Coloque os outros mariscos para cozinhar por 10 minutos em água, tempero para paella, meia cebola, 2 dentes de alho, um tomate, salsinha/cebolinha. Após cozidos, coe e reserve o caldo do cozimento para o arroz. Se preferir, pode só grelhar os mariscos em azeite, sal e alho.
+      Coloque mais água no caldo reservado das lulas/polvo e dos mariscos, acrescente um caldo de camarão ou de peixe e ferva.
+      Numa paellera (frigideira antiaderente rasa e larga - específica para o prato) refogue tiras de pimentão e rodelas de alho poró; retire esses ingredientes da panela e reserve para a finalização do prato. Nessa mesma panela acrescente bastante alho socado, refogue e acrescente cebola picadinha.
+      Coloque o arroz (sem lavar) e refogue com as cebolas e o alho refogados ligeiramente na paellera, acrescente o açafrão ao arroz.
+      Acrescente ao arroz o caldo da fervura aos poucos, mexendo sempre.
+      Quando estiver quase cozido o arroz, misture o frango, as lulas e o polvo cortados depois do cozimento, os demais mariscos (reservando os maiores para a ornamentação do prato) e parte das ervilhas. Coloque mais água, se necessário, para finalizar o cozimento.
+      Ornamente com rodelas de alho-poró por cima, ervilhas, camarões inteiros grandes (ou lagostins), mariscos com conchas, tiras de pimentões coloridos, salsa e pimentas dedo-de-moça. Por fim, regue com azeite a gosto.<br><br>
+
+
+
+    
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/tabs" routerLinkActive="active-route">
+        Ver menos
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

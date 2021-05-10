@@ -1,9 +1,53 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>vermais4</ion-title>
+  <ion-toolbar class="ion-text-center">
+    Perfil
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
+  <ion-back-button color="dark" class="save-button" defaultHref="/tabs" routerLink="/tabs" routerLinkActive="active-route">
+  </ion-back-button>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-avatar>
+            <img src="https://i.pravatar.cc/150?img=45"/>
+          </ion-avatar>
+        </ion-col>
+        <ion-col >
+          <ion-badge  color="primary" >
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </ion-badge>
+          <ion-card-title>Bianca Barros</ion-card-title>
+            <ion-card-subtitle>Brasil</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card-content>
+      <ion-text>
+        <h1 class="size">Feijoada</h1>
+      </ion-text>
+      Recheio:<br>
+      -1,1 kg de costela de porco salgada (1 peça com 12 ripas)<br>
+      -800 g de carne-seca<br>
+      -600 g de lombo de porco salgado<br>
+      Modo de preparo:<br>
+      Comece o preparo da feijoada no dia anterior para dessalgar as carnes. Descarte o excesso de gordura das peças. Corte o lombo e a carne-seca em cubos médios de cerca de 3 cm. Apoie a peça de costelinha na tábua e corte a carne entre os ossinhos para separar as ripas.<br>
+      Coloque cada tipo de carne numa tigela grande, cubra com bastante água e leve à geladeira. Deixe de molho por 24 horas para dessalgar, trocando a água a cada 3 horas, de preferência.<br><br> 
+
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/tabs" routerLinkActive="active-route">
+        Ver menos
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
