@@ -2,7 +2,9 @@
   <ion-toolbar color="primary">
     <ion-title class="ion-text-center">
       Desbravando Receitas
+      <!-- <ion-icon name="information-circle-outline"></ion-icon> -->
     </ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -169,5 +171,11 @@
       Ver mais
     </ion-button>
   </ion-card>
-  
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Carregando...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
   </ion-content>
