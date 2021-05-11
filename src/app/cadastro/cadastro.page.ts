@@ -12,15 +12,4 @@ export class CadastroPage implements OnInit {
   ngOnInit() {
   }
 
-  public dadosIns = ["null","null","null","null"];
-
-  public dados = ["null","null","null","null"];
-
-
-  public chamadados() {
-
-    console.log(this.dados);
-
-  }
-
 }
