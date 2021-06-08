@@ -49,11 +49,17 @@
   </ion-row>
 
   
+  <ion-col class="check">
+    <ion-checkbox></ion-checkbox>
+  </ion-col>
+
+
+  <ion-col class="termos">
+    <ion-button (click)="onClick()" fill="clear" routerLink="/termos" routerLinkActive="active-route">
+      <ion-text color="primary" class="size">
+       Termos de uso
+      </ion-text>
+    </ion-button>
+  </ion-col>
   
-  <ion-button (click)="onClick()" fill="clear" routerLink="/termos" routerLinkActive="active-route">
-    <ion-text color="primary">
-      <h1  class="size">Termos de uso</h1>
-    </ion-text>
-  </ion-button>
-  <!-- <ion-checkbox color="primary"></ion-checkbox> -->
 </ion-content>
