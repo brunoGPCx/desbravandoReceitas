@@ -42,7 +42,11 @@ const routes: Routes = [
     path: '',
     redirectTo: '/inicio',
     pathMatch: 'full'
+  },  {
+    path: 'termos1',
+    loadChildren: () => import('./termos1/termos1.module').then( m => m.Termos1PageModule)
   }
+
 
 ];
 @NgModule({
