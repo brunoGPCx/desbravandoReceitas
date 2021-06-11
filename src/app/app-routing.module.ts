@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'av',
     loadChildren: () => import('./av/av.module').then( m => m.AvPageModule)
+  },
+  {
+    path: 'config',
+    loadChildren: () => import('./config/config.module').then( m => m.ConfigPageModule)
   }
 
 

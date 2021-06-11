@@ -13,6 +13,9 @@
 
 <ion-card>
   <ion-card-header>
+    <ion-button (click)="onClick()" size="small">
+      <ion-icon  name="options"></ion-icon>
+    </ion-button>
     <ion-card-subtitle>Nome completo</ion-card-subtitle>
     <ion-card-title>Bruno Garcia Lima</ion-card-title>
   </ion-card-header>
@@ -57,41 +60,6 @@
     <ion-card-title>Viajar e conhecer pratos tipicos de outras culturas</ion-card-title>
   </ion-card-header>
 </ion-card>
-
-<ion-card>
-  <ion-card-header>
-    <ion-card-subtitle>Avaliacoes</ion-card-subtitle>
-    <ion-card-subtitle>375 avaliacoes</ion-card-subtitle>
-    
-    <ion-badge  color="primary" class="star">
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star-half"></ion-icon>
-    </ion-badge>
-
-    <ion-button  class="sair" (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/av" routerLinkActive="active-route">
-      <ion-icon></ion-icon>
-      ver avaliacoes
-    </ion-button> 
-
-  </ion-card-header>
-
-</ion-card>
-
-<ion-button  class="sair" (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/inicio" routerLinkActive="active-route">
-  <ion-icon></ion-icon>
-  sair
-</ion-button> 
-
-<ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/suporte" routerLinkActive="active-route">
-  Suporte
-</ion-button> 
-
-<ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/config" routerLinkActive="active-route">
-  Configuracoes
-</ion-button> 
 
 
 
