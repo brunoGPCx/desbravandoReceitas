@@ -53,6 +53,38 @@ const routes: Routes = [
   {
     path: 'config',
     loadChildren: () => import('./config/config.module').then( m => m.ConfigPageModule)
+  },
+  {
+    path: 'perfil1',
+    loadChildren: () => import('./perfil1/perfil1.module').then( m => m.Perfil1PageModule)
+  },
+  {
+    path: 'perfil2',
+    loadChildren: () => import('./perfil2/perfil2.module').then( m => m.Perfil2PageModule)
+  },
+  {
+    path: 'perfil3',
+    loadChildren: () => import('./perfil3/perfil3.module').then( m => m.Perfil3PageModule)
+  },
+  {
+    path: 'perfil4',
+    loadChildren: () => import('./perfil4/perfil4.module').then( m => m.Perfil4PageModule)
+  },
+  {
+    path: 'perfil5',
+    loadChildren: () => import('./perfil5/perfil5.module').then( m => m.Perfil5PageModule)
+  },
+  {
+    path: 'perfil6',
+    loadChildren: () => import('./perfil6/perfil6.module').then( m => m.Perfil6PageModule)
+  },
+  {
+    path: 'perfil7',
+    loadChildren: () => import('./perfil7/perfil7.module').then( m => m.Perfil7PageModule)
+  },
+  {
+    path: 'perfil8',
+    loadChildren: () => import('./perfil8/perfil8.module').then( m => m.Perfil8PageModule)
   }
 
 
