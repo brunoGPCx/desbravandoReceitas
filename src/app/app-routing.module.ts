@@ -45,6 +45,10 @@ const routes: Routes = [
   },  {
     path: 'termos1',
     loadChildren: () => import('./termos1/termos1.module').then( m => m.Termos1PageModule)
+  },
+  {
+    path: 'av',
+    loadChildren: () => import('./av/av.module').then( m => m.AvPageModule)
   }
 
 
