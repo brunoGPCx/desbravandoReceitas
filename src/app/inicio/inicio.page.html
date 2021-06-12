@@ -10,15 +10,15 @@
   <div id="teste"> 
   <div style="height: 10%; display: flex; align-items: center; justify-content: center;;">
     <ion-card>
-        <ion-input placeholder="Login"></ion-input>
-        <ion-input type="password" placeholder="Senha"></ion-input>
+        <ion-input type="email" placeholder="E-mail" [(ngModel)]="userLogin.email"></ion-input>
+        <ion-input type="password" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
     </ion-card>
   </div>
-  <ion-button (click)="onClick()" size="block" class="entrar" routerLink="/tabs/tab1" routerLinkActive="active-route">
+  <ion-button (click)="login()" size="block" class="entrar" routerLink="/tabs/tab1" routerLinkActive="active-route">
     entrar
   </ion-button>
   
-  <ion-button (click)="onClick()" size="block" class="cadastrar" routerLink="/cadastro" routerLinkActive="active-route">
+  <ion-button  size="block" class="cadastrar" routerLink="/cadastro" routerLinkActive="active-route">
     cadastro
   </ion-button>
 </div>
