@@ -105,6 +105,10 @@ const routes: Routes = [
   {
     path: 'p3',
     loadChildren: () => import('./p3/p3.module').then( m => m.P3PageModule)
+  },
+  {
+    path: 'p4',
+    loadChildren: () => import('./p4/p4.module').then( m => m.P4PageModule)
   }
 
 
