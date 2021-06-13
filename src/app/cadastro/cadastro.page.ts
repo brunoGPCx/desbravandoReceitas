@@ -30,6 +30,7 @@ export class CadastroPage implements OnInit {
     }finally{
       this.loading.dismiss();
     }
+    console.log(this.userRegister);
   }
 
   async presentLoading(){
