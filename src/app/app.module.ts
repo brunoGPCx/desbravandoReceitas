@@ -18,7 +18,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule, 
-    AngularFireModule.initializeApp(environment.firebase), 
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

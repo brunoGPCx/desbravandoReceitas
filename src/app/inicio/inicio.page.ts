@@ -3,6 +3,7 @@ import { LoadingController, ToastController, NavController, AlertController } fr
 import { User } from '../interfaces/user';
 import { AuthService } from '../services/auth.service';
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
