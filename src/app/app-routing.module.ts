@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
+import { InicioPage } from './inicio/inicio.page';
+
+// path: 'inicio', loadChildren: './inicio/inicio.module',  canActivate: [AuthGuard] TENTAMOS COLOCAR A LINHA 14 DESSA FORMA E NAO FOI POSSIVEL
+// CREIO QUE TENHA SIDO DEVIDO AO PROBLEMA DE ROTA QUE TIVEMOS COM O INICIO, ONDE FOI PRECISO SUA AJUDA PARA ARRUMAR
 
 const routes: Routes = [
   {
-    path: 'inicio',
-    loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioPageModule)
-  },
+    path: 'inicio', loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioPageModule)
+  }, 
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
@@ -42,7 +46,8 @@ const routes: Routes = [
     path: '',
     redirectTo: '/inicio',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'termos1',
     loadChildren: () => import('./termos1/termos1.module').then( m => m.Termos1PageModule)
   },
