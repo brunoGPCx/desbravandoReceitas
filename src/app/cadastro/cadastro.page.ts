@@ -26,6 +26,7 @@ export class CadastroPage implements OnInit {
       await this.authService.register(this.userRegister);
     }catch(error ) {
     console.error(error);
+      this.presentToast(error.message);
     }finally{
       this.loading.dismiss();
     }
@@ -34,6 +35,11 @@ export class CadastroPage implements OnInit {
   async presentLoading(){
     this.loading = await this.loadingCtrl.create({message: 'por favor, aguarde...'});
     return this.loading.present();
+  }
+
+  async presentToast(message: string){
+    const toast = await this.toastCtrl.create({ message, duration: 2000});
+    toast.present();
   }
 
 }
