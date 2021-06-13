@@ -93,6 +93,10 @@ const routes: Routes = [
   },  {
     path: 'recuperar',
     loadChildren: () => import('./recuperar/recuperar.module').then( m => m.RecuperarPageModule)
+  },
+  {
+    path: 'p1',
+    loadChildren: () => import('./p1/p1.module').then( m => m.P1PageModule)
   }
 
 
