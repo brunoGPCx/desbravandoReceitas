@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CanActivate, Router, ROUTER_CONFIGURATION } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 
-
+// BRUNO
 @Injectable({
   providedIn: 'root'
 })

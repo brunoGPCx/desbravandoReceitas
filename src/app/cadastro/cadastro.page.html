@@ -1,12 +1,11 @@
-
+<!-- BRUNO -->
 <ion-content>
   <ion-toolbar color="primary">
   <ion-back-button color="dark" class="save-button" defaultHref="/inicio" routerLink="/inicio" routerLinkActive="active-route">
   </ion-back-button>
 </ion-toolbar>
-  <!-- <ion-img class="timg"  src="assets/img/logonovo.png"></ion-img> -->
-
-
+<!-- BRUNO -->
+<!-- ELIAS -->
   <ion-item>
     <ion-label color="medium"> <ion-icon slot="start" name="id-card"></ion-icon> Nome:</ion-label>
     <ion-input></ion-input>
@@ -26,27 +25,22 @@
     <ion-label color="medium"> <ion-icon name="calendar-number-outline"></ion-icon> Data de nascimento:</ion-label>
     <ion-datetime display-format="DD/MM/YYYY"></ion-datetime>
   </ion-item>
-
+<!-- ELIAS -->
+<!-- BRUNO -->
   <ion-item>
     <ion-label color="medium"> <ion-icon slot="start" name="at-outline"></ion-icon> E-mail:</ion-label>
     <ion-input type="email" placeholder="E-mail" [(ngModel)]="userRegister.email" ></ion-input>
   </ion-item>
-
-  <!-- <ion-item>
-    <ion-label color="medium"> <ion-icon slot="start" name="at-outline"></ion-icon> Confirme seu E-mail:</ion-label>
-    <ion-input></ion-input>
-  </ion-item> -->
-
+<!-- BRUNO -->
+ 
+<!-- BRUNO -->
   <ion-item >
     <ion-label color="medium" > <ion-icon  slot="start" name="eye-off-outline"></ion-icon> Senha:</ion-label>
     <ion-input type="password" placeholder="Senha" [(ngModel)]="userRegister.password"></ion-input>
   </ion-item>
-
-  <!-- <ion-item >
-    <ion-label color="medium" > <ion-icon  slot="start" name="eye-off-outline"></ion-icon> Confirme sua senha:</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item> -->
-
+<!-- BRUNO -->
+ 
+<!-- ELIAS -->
   <ion-col class="check">
     <ion-checkbox></ion-checkbox>
   </ion-col>
@@ -59,10 +53,11 @@
       </ion-text>
     </ion-button>
   </ion-col>
-
+<!-- ELIAS -->
+<!-- BRUNO -->
   <ion-button (click)="register()" size="block" class="cadastrar" routerLink="/tabs" routerLinkActive="active-route">
     Finalizar cadastro
   </ion-button>
-
+<!-- BRUNO -->
   
 </ion-content>
