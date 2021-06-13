@@ -97,6 +97,10 @@ const routes: Routes = [
   {
     path: 'p1',
     loadChildren: () => import('./p1/p1.module').then( m => m.P1PageModule)
+  },
+  {
+    path: 'p2',
+    loadChildren: () => import('./p2/p2.module').then( m => m.P2PageModule)
   }
 
 
