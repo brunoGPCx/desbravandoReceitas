@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary" >
+    <ion-title class="ion-text-center">
+      Recuperar suas credencias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-back-button color="dark" class="save-button" defaultHref="/inicio" routerLink="/inicio" routerLinkActive="active-route">
+</ion-back-button>
+
+<ion-content>
+  <ion-item>
+    <ion-label color="medium"> <ion-icon name="mail-open-outline"></ion-icon> E-mail:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-col>
+    <ion-button size="block" (click)="showAlertSucesso()">
+      <ion-icon slot="icon-only" name="checkmark-done"></ion-icon>
+    </ion-button>
+  </ion-col>
+
+  
+</ion-content>

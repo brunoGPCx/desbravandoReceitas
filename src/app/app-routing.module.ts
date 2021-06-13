@@ -90,7 +90,11 @@ const routes: Routes = [
   {
     path: 'perfil8',
     loadChildren: () => import('./perfil8/perfil8.module').then( m => m.Perfil8PageModule)
+  },  {
+    path: 'recuperar',
+    loadChildren: () => import('./recuperar/recuperar.module').then( m => m.RecuperarPageModule)
   }
+
 
 
 ];
