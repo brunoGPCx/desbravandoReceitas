@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "desbravandoreceitas-efa77": {
+      "hosting": {
+        "app": [
+          "desbravandoreceitas-efa77"
+        ]
+      }
+    }
+  }
+}
